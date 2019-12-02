@@ -1,0 +1,6 @@
+framework module Pods_Idus_Test_App {
+  umbrella header "Pods-Idus_Test_App-umbrella.h"
+
+  export *
+  module * { export * }
+}
