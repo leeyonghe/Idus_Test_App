@@ -3,192 +3,224 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18350ABB0BC5CBDF0A5367BD /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5168ECB66F0A25CC97C17A /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */; };
-		5B2495ACFE2ED30804335F26 /* Pods_Idus_Test_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32226E5C62D80393D543E018 /* Pods_Idus_Test_App.framework */; };
-		9BBD88DF23955C80007C674A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD88DE23955C80007C674A /* AppDelegate.swift */; };
-		9BBD88E123955C80007C674A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD88E023955C80007C674A /* SceneDelegate.swift */; };
-		9BBD88E323955C80007C674A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD88E223955C80007C674A /* ContentView.swift */; };
-		9BBD88E523955C81007C674A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD88E423955C81007C674A /* Assets.xcassets */; };
-		9BBD88E823955C81007C674A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD88E723955C81007C674A /* Preview Assets.xcassets */; };
-		9BBD88EB23955C81007C674A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD88E923955C81007C674A /* LaunchScreen.storyboard */; };
-		9BBD88F623955C82007C674A /* Idus_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD88F523955C82007C674A /* Idus_Test_AppTests.swift */; };
-		9BBD890123955C82007C674A /* Idus_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD890023955C82007C674A /* Idus_Test_AppUITests.swift */; };
-		B0F2DD8D7F276095D9AD9F78 /* Pods_Idus_Test_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78DE652DB8013FAC1D33AA /* Pods_Idus_Test_AppTests.framework */; };
+		2366948184BA2E31AA743316 /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16AE90D518320A1CE13A5ED /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */; };
+		575FB4DF8597D7927D310CC8 /* Pods_Idus_Test_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94452CE8C3F76EAB6D4C213 /* Pods_Idus_Test_AppTests.framework */; };
+		898A1DC5581C7ED1632BD08D /* Pods_Idus_Test_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B881B10BE1E97D4D82F4DB77 /* Pods_Idus_Test_App.framework */; };
+		9B9AEA142397DFBA00E20E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA132397DFBA00E20E21 /* AppDelegate.swift */; };
+		9B9AEA162397DFBA00E20E21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA152397DFBA00E20E21 /* SceneDelegate.swift */; };
+		9B9AEA1B2397DFBA00E20E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AEA192397DFBA00E20E21 /* Main.storyboard */; };
+		9B9AEA1D2397DFBE00E20E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AEA1C2397DFBE00E20E21 /* Assets.xcassets */; };
+		9B9AEA2B2397DFBE00E20E21 /* Idus_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA2A2397DFBE00E20E21 /* Idus_Test_AppTests.swift */; };
+		9B9AEA362397DFBE00E20E21 /* Idus_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA352397DFBE00E20E21 /* Idus_Test_AppUITests.swift */; };
+		9B9AEA4F2397F08B00E20E21 /* idus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AEA4E2397F08B00E20E21 /* idus.png */; };
+		9B9AEA572397F3CF00E20E21 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA552397F3CF00E20E21 /* LoadingViewController.swift */; };
+		9B9AEA582397F3CF00E20E21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */; };
+		9B9AEA5A2397F40700E20E21 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA592397F40700E20E21 /* HomeViewModel.swift */; };
+		9B9AEA5C2397F45800E20E21 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA5B2397F45800E20E21 /* HomeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9BBD88F223955C81007C674A /* PBXContainerItemProxy */ = {
+		9B9AEA272397DFBE00E20E21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9BBD88D323955C80007C674A /* Project object */;
+			containerPortal = 9B9AEA082397DFBA00E20E21 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BBD88DA23955C80007C674A;
+			remoteGlobalIDString = 9B9AEA0F2397DFBA00E20E21;
 			remoteInfo = Idus_Test_App;
 		};
-		9BBD88FD23955C82007C674A /* PBXContainerItemProxy */ = {
+		9B9AEA322397DFBE00E20E21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9BBD88D323955C80007C674A /* Project object */;
+			containerPortal = 9B9AEA082397DFBA00E20E21 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BBD88DA23955C80007C674A;
+			remoteGlobalIDString = 9B9AEA0F2397DFBA00E20E21;
 			remoteInfo = Idus_Test_App;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21DCDA2039C381C10D2F8F8A /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		32226E5C62D80393D543E018 /* Pods_Idus_Test_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		480F5B02BC571F02E4054372 /* Pods-Idus_Test_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_AppTests/Pods-Idus_Test_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4E78DE652DB8013FAC1D33AA /* Pods_Idus_Test_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61341C02DA7BE5DAE49CB31C /* Pods-Idus_Test_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App.debug.xcconfig"; sourceTree = "<group>"; };
-		9BBD88DB23955C80007C674A /* Idus_Test_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idus_Test_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BBD88DE23955C80007C674A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BBD88E023955C80007C674A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BBD88E223955C80007C674A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9BBD88E423955C81007C674A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9BBD88E723955C81007C674A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9BBD88EA23955C81007C674A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9BBD88EC23955C81007C674A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BBD88F123955C81007C674A /* Idus_Test_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Idus_Test_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BBD88F523955C82007C674A /* Idus_Test_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idus_Test_AppTests.swift; sourceTree = "<group>"; };
-		9BBD88F723955C82007C674A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BBD88FC23955C82007C674A /* Idus_Test_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Idus_Test_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BBD890023955C82007C674A /* Idus_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idus_Test_AppUITests.swift; sourceTree = "<group>"; };
-		9BBD890223955C82007C674A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F3FB8A9FBB3CE6A9F590CCD /* Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AE5168ECB66F0A25CC97C17A /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_App_Idus_Test_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C93FE2383A9FFB2F5F30A9EE /* Pods-Idus_Test_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_AppTests.release.xcconfig"; path = "Target Support Files/Pods-Idus_Test_AppTests/Pods-Idus_Test_AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		CFDCCEF2BC9BA63F50E51540 /* Pods-Idus_Test_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App.release.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App.release.xcconfig"; sourceTree = "<group>"; };
+		0D865C2081714BD43DDDDF04 /* Pods-Idus_Test_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_AppTests.release.xcconfig"; path = "Target Support Files/Pods-Idus_Test_AppTests/Pods-Idus_Test_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		276DE1E3EF91BB9F79DED76A /* Pods-Idus_Test_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App.debug.xcconfig"; sourceTree = "<group>"; };
+		41C03C9EEE53CA3D2B992E04 /* Pods-Idus_Test_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App.release.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App.release.xcconfig"; sourceTree = "<group>"; };
+		56B1241D3AF1A244A7C70AB4 /* Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B9AEA102397DFBA00E20E21 /* Idus_Test_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idus_Test_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9AEA132397DFBA00E20E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B9AEA152397DFBA00E20E21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B9AEA1A2397DFBA00E20E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B9AEA1C2397DFBE00E20E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9AEA212397DFBE00E20E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9AEA262397DFBE00E20E21 /* Idus_Test_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Idus_Test_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9AEA2A2397DFBE00E20E21 /* Idus_Test_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idus_Test_AppTests.swift; sourceTree = "<group>"; };
+		9B9AEA2C2397DFBE00E20E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9AEA312397DFBE00E20E21 /* Idus_Test_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Idus_Test_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9AEA352397DFBE00E20E21 /* Idus_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idus_Test_AppUITests.swift; sourceTree = "<group>"; };
+		9B9AEA372397DFBE00E20E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9AEA4E2397F08B00E20E21 /* idus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idus.png; sourceTree = "<group>"; };
+		9B9AEA552397F3CF00E20E21 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9B9AEA592397F40700E20E21 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9B9AEA5B2397F45800E20E21 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		B2D1845D5BBB51D5083E7B71 /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B881B10BE1E97D4D82F4DB77 /* Pods_Idus_Test_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16AE90D518320A1CE13A5ED /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_App_Idus_Test_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94452CE8C3F76EAB6D4C213 /* Pods_Idus_Test_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB9C5FEF0B77063225CB1FF /* Pods-Idus_Test_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_AppTests/Pods-Idus_Test_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9BBD88D823955C80007C674A /* Frameworks */ = {
+		9B9AEA0D2397DFBA00E20E21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2495ACFE2ED30804335F26 /* Pods_Idus_Test_App.framework in Frameworks */,
+				898A1DC5581C7ED1632BD08D /* Pods_Idus_Test_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BBD88EE23955C81007C674A /* Frameworks */ = {
+		9B9AEA232397DFBE00E20E21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F2DD8D7F276095D9AD9F78 /* Pods_Idus_Test_AppTests.framework in Frameworks */,
+				575FB4DF8597D7927D310CC8 /* Pods_Idus_Test_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BBD88F923955C82007C674A /* Frameworks */ = {
+		9B9AEA2E2397DFBE00E20E21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18350ABB0BC5CBDF0A5367BD /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework in Frameworks */,
+				2366948184BA2E31AA743316 /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		80EAB1D02F7F224C1012EE39 /* Pods */ = {
+		731B2CAF5170B36B04FA3913 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				61341C02DA7BE5DAE49CB31C /* Pods-Idus_Test_App.debug.xcconfig */,
-				CFDCCEF2BC9BA63F50E51540 /* Pods-Idus_Test_App.release.xcconfig */,
-				21DCDA2039C381C10D2F8F8A /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */,
-				9F3FB8A9FBB3CE6A9F590CCD /* Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig */,
-				480F5B02BC571F02E4054372 /* Pods-Idus_Test_AppTests.debug.xcconfig */,
-				C93FE2383A9FFB2F5F30A9EE /* Pods-Idus_Test_AppTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		8F1784EAC6CF1618F0F6418D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				32226E5C62D80393D543E018 /* Pods_Idus_Test_App.framework */,
-				AE5168ECB66F0A25CC97C17A /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */,
-				4E78DE652DB8013FAC1D33AA /* Pods_Idus_Test_AppTests.framework */,
+				B881B10BE1E97D4D82F4DB77 /* Pods_Idus_Test_App.framework */,
+				D16AE90D518320A1CE13A5ED /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */,
+				F94452CE8C3F76EAB6D4C213 /* Pods_Idus_Test_AppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9BBD88D223955C80007C674A = {
+		9AEA52AD181E5D41783C7F77 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BBD88DD23955C80007C674A /* Idus_Test_App */,
-				9BBD88F423955C82007C674A /* Idus_Test_AppTests */,
-				9BBD88FF23955C82007C674A /* Idus_Test_AppUITests */,
-				9BBD88DC23955C80007C674A /* Products */,
-				80EAB1D02F7F224C1012EE39 /* Pods */,
-				8F1784EAC6CF1618F0F6418D /* Frameworks */,
+				276DE1E3EF91BB9F79DED76A /* Pods-Idus_Test_App.debug.xcconfig */,
+				41C03C9EEE53CA3D2B992E04 /* Pods-Idus_Test_App.release.xcconfig */,
+				B2D1845D5BBB51D5083E7B71 /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */,
+				56B1241D3AF1A244A7C70AB4 /* Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig */,
+				FDB9C5FEF0B77063225CB1FF /* Pods-Idus_Test_AppTests.debug.xcconfig */,
+				0D865C2081714BD43DDDDF04 /* Pods-Idus_Test_AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B9AEA072397DFBA00E20E21 = {
+			isa = PBXGroup;
+			children = (
+				9B9AEA122397DFBA00E20E21 /* Idus_Test_App */,
+				9B9AEA292397DFBE00E20E21 /* Idus_Test_AppTests */,
+				9B9AEA342397DFBE00E20E21 /* Idus_Test_AppUITests */,
+				9B9AEA112397DFBA00E20E21 /* Products */,
+				9AEA52AD181E5D41783C7F77 /* Pods */,
+				731B2CAF5170B36B04FA3913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9BBD88DC23955C80007C674A /* Products */ = {
+		9B9AEA112397DFBA00E20E21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BBD88DB23955C80007C674A /* Idus_Test_App.app */,
-				9BBD88F123955C81007C674A /* Idus_Test_AppTests.xctest */,
-				9BBD88FC23955C82007C674A /* Idus_Test_AppUITests.xctest */,
+				9B9AEA102397DFBA00E20E21 /* Idus_Test_App.app */,
+				9B9AEA262397DFBE00E20E21 /* Idus_Test_AppTests.xctest */,
+				9B9AEA312397DFBE00E20E21 /* Idus_Test_AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BBD88DD23955C80007C674A /* Idus_Test_App */ = {
+		9B9AEA122397DFBA00E20E21 /* Idus_Test_App */ = {
 			isa = PBXGroup;
 			children = (
-				9BBD88DE23955C80007C674A /* AppDelegate.swift */,
-				9BBD88E023955C80007C674A /* SceneDelegate.swift */,
-				9BBD88E223955C80007C674A /* ContentView.swift */,
-				9BBD88E423955C81007C674A /* Assets.xcassets */,
-				9BBD88E923955C81007C674A /* LaunchScreen.storyboard */,
-				9BBD88EC23955C81007C674A /* Info.plist */,
-				9BBD88E623955C81007C674A /* Preview Content */,
+				9B9AEA542397F3AE00E20E21 /* Model */,
+				9B9AEA532397F39200E20E21 /* ViewModel */,
+				9B9AEA522397F37200E20E21 /* ViewController */,
+				9B9AEA472397E23600E20E21 /* img */,
+				9B9AEA132397DFBA00E20E21 /* AppDelegate.swift */,
+				9B9AEA152397DFBA00E20E21 /* SceneDelegate.swift */,
+				9B9AEA192397DFBA00E20E21 /* Main.storyboard */,
+				9B9AEA1C2397DFBE00E20E21 /* Assets.xcassets */,
+				9B9AEA212397DFBE00E20E21 /* Info.plist */,
 			);
 			path = Idus_Test_App;
 			sourceTree = "<group>";
 		};
-		9BBD88E623955C81007C674A /* Preview Content */ = {
+		9B9AEA292397DFBE00E20E21 /* Idus_Test_AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				9BBD88E723955C81007C674A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9BBD88F423955C82007C674A /* Idus_Test_AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				9BBD88F523955C82007C674A /* Idus_Test_AppTests.swift */,
-				9BBD88F723955C82007C674A /* Info.plist */,
+				9B9AEA2A2397DFBE00E20E21 /* Idus_Test_AppTests.swift */,
+				9B9AEA2C2397DFBE00E20E21 /* Info.plist */,
 			);
 			path = Idus_Test_AppTests;
 			sourceTree = "<group>";
 		};
-		9BBD88FF23955C82007C674A /* Idus_Test_AppUITests */ = {
+		9B9AEA342397DFBE00E20E21 /* Idus_Test_AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9BBD890023955C82007C674A /* Idus_Test_AppUITests.swift */,
-				9BBD890223955C82007C674A /* Info.plist */,
+				9B9AEA352397DFBE00E20E21 /* Idus_Test_AppUITests.swift */,
+				9B9AEA372397DFBE00E20E21 /* Info.plist */,
 			);
 			path = Idus_Test_AppUITests;
+			sourceTree = "<group>";
+		};
+		9B9AEA472397E23600E20E21 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				9B9AEA4E2397F08B00E20E21 /* idus.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		9B9AEA522397F37200E20E21 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */,
+				9B9AEA552397F3CF00E20E21 /* LoadingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9B9AEA532397F39200E20E21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B9AEA592397F40700E20E21 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9B9AEA542397F3AE00E20E21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B9AEA5B2397F45800E20E21 /* HomeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BBD88DA23955C80007C674A /* Idus_Test_App */ = {
+		9B9AEA0F2397DFBA00E20E21 /* Idus_Test_App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BBD890523955C82007C674A /* Build configuration list for PBXNativeTarget "Idus_Test_App" */;
+			buildConfigurationList = 9B9AEA3A2397DFBE00E20E21 /* Build configuration list for PBXNativeTarget "Idus_Test_App" */;
 			buildPhases = (
-				CB7BF783B9912204A1078DA8 /* [CP] Check Pods Manifest.lock */,
-				9BBD88D723955C80007C674A /* Sources */,
-				9BBD88D823955C80007C674A /* Frameworks */,
-				9BBD88D923955C80007C674A /* Resources */,
-				0ADB637DA0349AD0CE8A980F /* [CP] Embed Pods Frameworks */,
+				820CDAC4901DDBBF8659B5E6 /* [CP] Check Pods Manifest.lock */,
+				9B9AEA0C2397DFBA00E20E21 /* Sources */,
+				9B9AEA0D2397DFBA00E20E21 /* Frameworks */,
+				9B9AEA0E2397DFBA00E20E21 /* Resources */,
+				BC606C1CCF491D8CF47DC137 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,72 +228,72 @@
 			);
 			name = Idus_Test_App;
 			productName = Idus_Test_App;
-			productReference = 9BBD88DB23955C80007C674A /* Idus_Test_App.app */;
+			productReference = 9B9AEA102397DFBA00E20E21 /* Idus_Test_App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9BBD88F023955C81007C674A /* Idus_Test_AppTests */ = {
+		9B9AEA252397DFBE00E20E21 /* Idus_Test_AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BBD890823955C82007C674A /* Build configuration list for PBXNativeTarget "Idus_Test_AppTests" */;
+			buildConfigurationList = 9B9AEA3D2397DFBE00E20E21 /* Build configuration list for PBXNativeTarget "Idus_Test_AppTests" */;
 			buildPhases = (
-				1BA31984E88FBE3C9435936D /* [CP] Check Pods Manifest.lock */,
-				9BBD88ED23955C81007C674A /* Sources */,
-				9BBD88EE23955C81007C674A /* Frameworks */,
-				9BBD88EF23955C81007C674A /* Resources */,
+				820FE9DE604633A182BA3EB4 /* [CP] Check Pods Manifest.lock */,
+				9B9AEA222397DFBE00E20E21 /* Sources */,
+				9B9AEA232397DFBE00E20E21 /* Frameworks */,
+				9B9AEA242397DFBE00E20E21 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9BBD88F323955C81007C674A /* PBXTargetDependency */,
+				9B9AEA282397DFBE00E20E21 /* PBXTargetDependency */,
 			);
 			name = Idus_Test_AppTests;
 			productName = Idus_Test_AppTests;
-			productReference = 9BBD88F123955C81007C674A /* Idus_Test_AppTests.xctest */;
+			productReference = 9B9AEA262397DFBE00E20E21 /* Idus_Test_AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9BBD88FB23955C82007C674A /* Idus_Test_AppUITests */ = {
+		9B9AEA302397DFBE00E20E21 /* Idus_Test_AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BBD890B23955C82007C674A /* Build configuration list for PBXNativeTarget "Idus_Test_AppUITests" */;
+			buildConfigurationList = 9B9AEA402397DFBE00E20E21 /* Build configuration list for PBXNativeTarget "Idus_Test_AppUITests" */;
 			buildPhases = (
-				93E245D4DB424E4AE99EF3C7 /* [CP] Check Pods Manifest.lock */,
-				9BBD88F823955C82007C674A /* Sources */,
-				9BBD88F923955C82007C674A /* Frameworks */,
-				9BBD88FA23955C82007C674A /* Resources */,
-				B7A652C05AB439CF0004E274 /* [CP] Embed Pods Frameworks */,
+				80B40E83D1E4C08B7D90EF15 /* [CP] Check Pods Manifest.lock */,
+				9B9AEA2D2397DFBE00E20E21 /* Sources */,
+				9B9AEA2E2397DFBE00E20E21 /* Frameworks */,
+				9B9AEA2F2397DFBE00E20E21 /* Resources */,
+				DA38B48189DAF69ADC1656E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9BBD88FE23955C82007C674A /* PBXTargetDependency */,
+				9B9AEA332397DFBE00E20E21 /* PBXTargetDependency */,
 			);
 			name = Idus_Test_AppUITests;
 			productName = Idus_Test_AppUITests;
-			productReference = 9BBD88FC23955C82007C674A /* Idus_Test_AppUITests.xctest */;
+			productReference = 9B9AEA312397DFBE00E20E21 /* Idus_Test_AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9BBD88D323955C80007C674A /* Project object */ = {
+		9B9AEA082397DFBA00E20E21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = lee;
 				TargetAttributes = {
-					9BBD88DA23955C80007C674A = {
+					9B9AEA0F2397DFBA00E20E21 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
-					9BBD88F023955C81007C674A = {
+					9B9AEA252397DFBE00E20E21 = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 9BBD88DA23955C80007C674A;
+						TestTargetID = 9B9AEA0F2397DFBA00E20E21;
 					};
-					9BBD88FB23955C82007C674A = {
+					9B9AEA302397DFBE00E20E21 = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 9BBD88DA23955C80007C674A;
+						TestTargetID = 9B9AEA0F2397DFBA00E20E21;
 					};
 				};
 			};
-			buildConfigurationList = 9BBD88D623955C80007C674A /* Build configuration list for PBXProject "Idus_Test_App" */;
+			buildConfigurationList = 9B9AEA0B2397DFBA00E20E21 /* Build configuration list for PBXProject "Idus_Test_App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -269,37 +301,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 9BBD88D223955C80007C674A;
-			productRefGroup = 9BBD88DC23955C80007C674A /* Products */;
+			mainGroup = 9B9AEA072397DFBA00E20E21;
+			productRefGroup = 9B9AEA112397DFBA00E20E21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BBD88DA23955C80007C674A /* Idus_Test_App */,
-				9BBD88F023955C81007C674A /* Idus_Test_AppTests */,
-				9BBD88FB23955C82007C674A /* Idus_Test_AppUITests */,
+				9B9AEA0F2397DFBA00E20E21 /* Idus_Test_App */,
+				9B9AEA252397DFBE00E20E21 /* Idus_Test_AppTests */,
+				9B9AEA302397DFBE00E20E21 /* Idus_Test_AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9BBD88D923955C80007C674A /* Resources */ = {
+		9B9AEA0E2397DFBA00E20E21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BBD88EB23955C81007C674A /* LaunchScreen.storyboard in Resources */,
-				9BBD88E823955C81007C674A /* Preview Assets.xcassets in Resources */,
-				9BBD88E523955C81007C674A /* Assets.xcassets in Resources */,
+				9B9AEA1D2397DFBE00E20E21 /* Assets.xcassets in Resources */,
+				9B9AEA1B2397DFBA00E20E21 /* Main.storyboard in Resources */,
+				9B9AEA4F2397F08B00E20E21 /* idus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BBD88EF23955C81007C674A /* Resources */ = {
+		9B9AEA242397DFBE00E20E21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BBD88FA23955C82007C674A /* Resources */ = {
+		9B9AEA2F2397DFBE00E20E21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,46 +341,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ADB637DA0349AD0CE8A980F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BA31984E88FBE3C9435936D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Idus_Test_AppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93E245D4DB424E4AE99EF3C7 /* [CP] Check Pods Manifest.lock */ = {
+		80B40E83D1E4C08B7D90EF15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,24 +363,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B7A652C05AB439CF0004E274 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB7BF783B9912204A1078DA8 /* [CP] Check Pods Manifest.lock */ = {
+		820CDAC4901DDBBF8659B5E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,63 +385,122 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		820FE9DE604633A182BA3EB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Idus_Test_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC606C1CCF491D8CF47DC137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App/Pods-Idus_Test_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA38B48189DAF69ADC1656E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9BBD88D723955C80007C674A /* Sources */ = {
+		9B9AEA0C2397DFBA00E20E21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BBD88DF23955C80007C674A /* AppDelegate.swift in Sources */,
-				9BBD88E123955C80007C674A /* SceneDelegate.swift in Sources */,
-				9BBD88E323955C80007C674A /* ContentView.swift in Sources */,
+				9B9AEA142397DFBA00E20E21 /* AppDelegate.swift in Sources */,
+				9B9AEA162397DFBA00E20E21 /* SceneDelegate.swift in Sources */,
+				9B9AEA5C2397F45800E20E21 /* HomeModel.swift in Sources */,
+				9B9AEA572397F3CF00E20E21 /* LoadingViewController.swift in Sources */,
+				9B9AEA5A2397F40700E20E21 /* HomeViewModel.swift in Sources */,
+				9B9AEA582397F3CF00E20E21 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BBD88ED23955C81007C674A /* Sources */ = {
+		9B9AEA222397DFBE00E20E21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BBD88F623955C82007C674A /* Idus_Test_AppTests.swift in Sources */,
+				9B9AEA2B2397DFBE00E20E21 /* Idus_Test_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BBD88F823955C82007C674A /* Sources */ = {
+		9B9AEA2D2397DFBE00E20E21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BBD890123955C82007C674A /* Idus_Test_AppUITests.swift in Sources */,
+				9B9AEA362397DFBE00E20E21 /* Idus_Test_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9BBD88F323955C81007C674A /* PBXTargetDependency */ = {
+		9B9AEA282397DFBE00E20E21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BBD88DA23955C80007C674A /* Idus_Test_App */;
-			targetProxy = 9BBD88F223955C81007C674A /* PBXContainerItemProxy */;
+			target = 9B9AEA0F2397DFBA00E20E21 /* Idus_Test_App */;
+			targetProxy = 9B9AEA272397DFBE00E20E21 /* PBXContainerItemProxy */;
 		};
-		9BBD88FE23955C82007C674A /* PBXTargetDependency */ = {
+		9B9AEA332397DFBE00E20E21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BBD88DA23955C80007C674A /* Idus_Test_App */;
-			targetProxy = 9BBD88FD23955C82007C674A /* PBXContainerItemProxy */;
+			target = 9B9AEA0F2397DFBA00E20E21 /* Idus_Test_App */;
+			targetProxy = 9B9AEA322397DFBE00E20E21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9BBD88E923955C81007C674A /* LaunchScreen.storyboard */ = {
+		9B9AEA192397DFBA00E20E21 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9BBD88EA23955C81007C674A /* Base */,
+				9B9AEA1A2397DFBA00E20E21 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9BBD890323955C82007C674A /* Debug */ = {
+		9B9AEA382397DFBE00E20E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -525,7 +560,7 @@
 			};
 			name = Debug;
 		};
-		9BBD890423955C82007C674A /* Release */ = {
+		9B9AEA392397DFBE00E20E21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -579,15 +614,13 @@
 			};
 			name = Release;
 		};
-		9BBD890623955C82007C674A /* Debug */ = {
+		9B9AEA3B2397DFBE00E20E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61341C02DA7BE5DAE49CB31C /* Pods-Idus_Test_App.debug.xcconfig */;
+			baseConfigurationReference = 276DE1E3EF91BB9F79DED76A /* Pods-Idus_Test_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Idus_Test_App/Preview Content\"";
 				DEVELOPMENT_TEAM = P3K3QFQ884;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Idus_Test_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,19 +629,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idus.kr.Idus-Test-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		9BBD890723955C82007C674A /* Release */ = {
+		9B9AEA3C2397DFBE00E20E21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFDCCEF2BC9BA63F50E51540 /* Pods-Idus_Test_App.release.xcconfig */;
+			baseConfigurationReference = 41C03C9EEE53CA3D2B992E04 /* Pods-Idus_Test_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Idus_Test_App/Preview Content\"";
 				DEVELOPMENT_TEAM = P3K3QFQ884;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Idus_Test_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,13 +648,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idus.kr.Idus-Test-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		9BBD890923955C82007C674A /* Debug */ = {
+		9B9AEA3E2397DFBE00E20E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 480F5B02BC571F02E4054372 /* Pods-Idus_Test_AppTests.debug.xcconfig */;
+			baseConfigurationReference = FDB9C5FEF0B77063225CB1FF /* Pods-Idus_Test_AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -644,9 +675,9 @@
 			};
 			name = Debug;
 		};
-		9BBD890A23955C82007C674A /* Release */ = {
+		9B9AEA3F2397DFBE00E20E21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93FE2383A9FFB2F5F30A9EE /* Pods-Idus_Test_AppTests.release.xcconfig */;
+			baseConfigurationReference = 0D865C2081714BD43DDDDF04 /* Pods-Idus_Test_AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,9 +698,9 @@
 			};
 			name = Release;
 		};
-		9BBD890C23955C82007C674A /* Debug */ = {
+		9B9AEA412397DFBE00E20E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21DCDA2039C381C10D2F8F8A /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */;
+			baseConfigurationReference = B2D1845D5BBB51D5083E7B71 /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,9 +719,9 @@
 			};
 			name = Debug;
 		};
-		9BBD890D23955C82007C674A /* Release */ = {
+		9B9AEA422397DFBE00E20E21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F3FB8A9FBB3CE6A9F590CCD /* Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig */;
+			baseConfigurationReference = 56B1241D3AF1A244A7C70AB4 /* Pods-Idus_Test_App-Idus_Test_AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -712,43 +743,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BBD88D623955C80007C674A /* Build configuration list for PBXProject "Idus_Test_App" */ = {
+		9B9AEA0B2397DFBA00E20E21 /* Build configuration list for PBXProject "Idus_Test_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BBD890323955C82007C674A /* Debug */,
-				9BBD890423955C82007C674A /* Release */,
+				9B9AEA382397DFBE00E20E21 /* Debug */,
+				9B9AEA392397DFBE00E20E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BBD890523955C82007C674A /* Build configuration list for PBXNativeTarget "Idus_Test_App" */ = {
+		9B9AEA3A2397DFBE00E20E21 /* Build configuration list for PBXNativeTarget "Idus_Test_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BBD890623955C82007C674A /* Debug */,
-				9BBD890723955C82007C674A /* Release */,
+				9B9AEA3B2397DFBE00E20E21 /* Debug */,
+				9B9AEA3C2397DFBE00E20E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BBD890823955C82007C674A /* Build configuration list for PBXNativeTarget "Idus_Test_AppTests" */ = {
+		9B9AEA3D2397DFBE00E20E21 /* Build configuration list for PBXNativeTarget "Idus_Test_AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BBD890923955C82007C674A /* Debug */,
-				9BBD890A23955C82007C674A /* Release */,
+				9B9AEA3E2397DFBE00E20E21 /* Debug */,
+				9B9AEA3F2397DFBE00E20E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BBD890B23955C82007C674A /* Build configuration list for PBXNativeTarget "Idus_Test_AppUITests" */ = {
+		9B9AEA402397DFBE00E20E21 /* Build configuration list for PBXNativeTarget "Idus_Test_AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BBD890C23955C82007C674A /* Debug */,
-				9BBD890D23955C82007C674A /* Release */,
+				9B9AEA412397DFBE00E20E21 /* Debug */,
+				9B9AEA422397DFBE00E20E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9BBD88D323955C80007C674A /* Project object */;
+	rootObject = 9B9AEA082397DFBA00E20E21 /* Project object */;
 }

@@ -45,7 +45,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="ogp-cO-I3x" kind="show" id="FO7-32-nB3"/>
+                        <segue destination="ogp-cO-I3x" kind="presentation" identifier="next" modalPresentationStyle="overFullScreen" id="FO7-32-nB3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1017" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Sjq-AQ-gl7">
             <objects>
-                <viewController id="bu0-i6-0H5" sceneMemberID="viewController">
+                <viewController id="bu0-i6-0H5" customClass="HomeViewController" customModule="Idus_Test_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pqA-cK-z80"/>
                         <viewControllerLayoutGuide type="bottom" id="O5j-IE-LwF"/>
@@ -96,6 +96,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kHS-es-fZW"/>
                     <connections>
+                        <outlet property="table" destination="G90-9o-Eia" id="Gwh-aB-opX"/>
                         <segue destination="6Po-oE-3DV" kind="show" identifier="detail" id="ft6-NZ-mOD"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,7 @@ target 'Idus_Test_App' do
 
   pod 'RxSwift'
   pod "RxCocoa"
+  
   # Pods for Idus_Test_App
 
   target 'Idus_Test_AppTests' do
