@@ -15,3 +15,8 @@ struct AppConstants {
     static let base_url : String = "https://2jt4kq01ij.execute-api.ap-northeast-2.amazonaws.com/prod/"
 
 }
+
+enum ServiceResponse {
+    case success
+    case failure
+}

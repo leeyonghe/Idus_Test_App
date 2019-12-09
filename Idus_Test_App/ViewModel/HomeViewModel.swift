@@ -14,11 +14,6 @@ protocol HomeViewModelDelegate {
     func RealodDataFinished(state : ServiceResponse)
 }
 
-enum ServiceResponse {
-    case success
-    case failure
-}
-
 protocol HomeViewModelProtocol {
     
     var title:String { get }

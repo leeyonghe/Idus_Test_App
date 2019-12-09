@@ -26,6 +26,13 @@ class HomeViewController : UIViewController {
 //        table.register(nibName, forCellReuseIdentifier: "Cell")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail" {
+            let controller = segue.destination as! DetailViewController
+            controller.id = sender as! Int
+        }
+    }
+    
 }
 
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -45,14 +52,14 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         let processor = DownsamplingImageProcessor(size: cell.thumbnail_520.bounds.size) |> RoundCornerImageProcessor(cornerRadius: 20)
         cell.thumbnail_520.kf.indicatorType = .activity
         cell.thumbnail_520.kf.setImage(
-            with: url,
-            placeholder: UIImage(named: "no_image"),
-            options: [
-                .processor(processor),
-                .scaleFactor(UIScreen.main.scale),
-                .transition(.fade(1)),
-                .cacheOriginalImage
-            ])
+        with: url,
+        placeholder: UIImage(named: "no_image"),
+        options: [
+            .processor(processor),
+            .scaleFactor(1.0),
+            .transition(.fade(1)),
+            .cacheOriginalImage
+        ])
         
         cell.title.text = model.title
         
@@ -60,10 +67,15 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.viewModel.model[indexPath.row]
+        self.performSegue(withIdentifier: "detail", sender: model.id)
+    }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewCellWithd = collectionView.frame.width / 2 - 1
-        return CGSize(width: collectionViewCellWithd, height: 281)
+        return CGSize(width: collectionViewCellWithd, height: 258)
     }
 
     
