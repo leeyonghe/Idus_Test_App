@@ -10,11 +10,12 @@ import Foundation
 import Alamofire
 
 protocol HomeViewModelDelegate {
-    func RealodDataFinished()
+    func LoadingStart()
+    func RealodDataFinished(state : ServiceResponse)
 }
 
 enum ServiceResponse {
-    case success([String: Any])
+    case success
     case failure
 }
 
@@ -35,33 +36,7 @@ protocol HomeViewModelProtocol {
 public class HomeViewModel : HomeViewModelProtocol {
     
     func initDataload() {
-        
-        Alamofire.request(AppConstants.base_url,
-                          method: .get,
-                          parameters: ["include_docs": "true"])
-        .validate()
-        .responseJSON { response in
-          guard response.result.isSuccess else {
-            print("Error while fetching remote rooms: \(String(describing:response.result.error))")
-//            completion(nil)
-            return
-          }
-
-          guard let value = response.result.value as? [String: Any],
-            let rows = value["rows"] as? [[String: Any]] else {
-              print("Malformed data received from fetchAllRooms service")
-//              completion(nil)
-              return
-          }
-          
-          self.model = rows.compactMap { roomDict in return HomeModel(jsonData: roomDict) }
-//          completion(rooms)
-        }
-        
-    }
-    
-    init() {
-        self.initDataload()
+        Network("\(AppConstants.base_url)products")
     }
     
     var homeViewModelDelegate : HomeViewModelDelegate?
@@ -78,6 +53,37 @@ public class HomeViewModel : HomeViewModelProtocol {
     
     public var title:String {
         return "제품 목록"
+    }
+    
+    func Network(_ url : String){
+        self.homeViewModelDelegate?.LoadingStart()
+        Alamofire.request(url,
+                          method: .get,
+                          parameters: ["page": 1])
+                .validate()
+                .responseJSON { response in
+                 
+                    guard response.result.isSuccess else {
+                        print("Error while fetching remote : \(String(describing:response.result.error))")
+                        self.homeViewModelDelegate!.RealodDataFinished(state: ServiceResponse.failure)
+                        return
+                    }
+
+                    guard let value = response.result.value as? [String: Any],
+                        let rows = value["body"] as? [[String: Any]] else {
+                        print("Malformed data received from service")
+                        self.homeViewModelDelegate!.RealodDataFinished(state: ServiceResponse.failure)
+                        return
+                    }
+                  
+                    self.model = rows.compactMap { roomDict in return HomeModel(jsonData: roomDict) }
+                    
+                    NSLog(">>>>>>>>>>>>>>>>>>> model : %@", self.model)
+                    
+                    self.homeViewModelDelegate!.RealodDataFinished(state: ServiceResponse.success)
+                    
+                }
+        
     }
     
 }

@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import Kingfisher
 
-class HomeViewCell : UITableViewCell {
+class HomeViewCell : UICollectionViewCell {
+    
+    @IBOutlet var thumbnail_520 : UIImageView!
+    @IBOutlet var title : UILabel!
+    @IBOutlet var seller : UILabel!
     
 }
