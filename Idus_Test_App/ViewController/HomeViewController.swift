@@ -8,23 +8,45 @@
 
 import UIKit
 
-protocol HomeViewControllerProtocol {
-    var viewModel:HomeViewModel { get set }
-    func configure()
-}
-
-class HomeViewController : UIViewController, HomeViewControllerProtocol{
+class HomeViewController : UIViewController {
     
     var viewModel = HomeViewModel()
     
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
-
+        initView()
+        viewModel.homeViewModelDelegate = self
     }
     
-    func configure() {
+    func initView() {
         
+    }
+    
+}
+
+extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.viewModel.getModelCount()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let model = self.viewModel.model[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! HomeViewCell
+        
+        return cell
+        
+    }
+    
+}
+
+extension HomeViewController : HomeViewModelDelegate{
+    
+    func RealodDataFinished() {
+        self.table.reloadData()
     }
     
 }
