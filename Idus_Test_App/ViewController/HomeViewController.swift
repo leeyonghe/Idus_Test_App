@@ -50,7 +50,8 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         let url = URL(string: model.thumbnail_520)
         
-        let processor = DownsamplingImageProcessor(size: cell.thumbnail_520.bounds.size) |> RoundCornerImageProcessor(cornerRadius: 20)
+        let scale = UIScreen.main.scale
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: cell.thumbnail_520.bounds.size.width * scale, height: cell.thumbnail_520.bounds.size.height * scale)) |> RoundCornerImageProcessor(cornerRadius: 20)
         cell.thumbnail_520.kf.indicatorType = .activity
         cell.thumbnail_520.kf.setImage(
         with: url,
@@ -59,7 +60,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             .processor(processor),
             .scaleFactor(1.0),
             .transition(.fade(1)),
-            .cacheOriginalImage
+            .cacheOriginalImage,
         ])
         
         cell.title.text = model.title
