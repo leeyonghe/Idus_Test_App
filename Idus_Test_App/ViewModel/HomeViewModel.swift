@@ -16,22 +16,26 @@ protocol HomeViewModelDelegate {
 
 protocol HomeViewModelProtocol {
     
-    var title:String { get }
+    var page : Int { get set }
+    
+    var title : String { get }
     
     var model : [HomeModel] { get set }
-    
-    func initDataload()
     
     func getModelCount() -> Int
     
     func setDelegate(homeViewModelDelegate : HomeViewModelDelegate);
     
+    func addDataList()
+    
 }
 
 public class HomeViewModel : HomeViewModelProtocol {
     
-    func initDataload() {
-        Network("\(AppConstants.base_url)products")
+    public var page : Int = 1
+    
+    func addDataList() {
+        Network("\(AppConstants.base_url)products", page)
     }
     
     var homeViewModelDelegate : HomeViewModelDelegate?
@@ -50,11 +54,11 @@ public class HomeViewModel : HomeViewModelProtocol {
         return "제품 목록"
     }
     
-    func Network(_ url : String){
+    func Network(_ url : String, _ page : Int){
         self.homeViewModelDelegate?.LoadingStart()
         Alamofire.request(url,
                           method: .get,
-                          parameters: ["page": 1])
+                          parameters: ["page": page])
                 .validate()
                 .responseJSON { response in
                  
@@ -71,11 +75,13 @@ public class HomeViewModel : HomeViewModelProtocol {
                         return
                     }
                   
-                    self.model = rows.compactMap { roomDict in return HomeModel(jsonData: roomDict) }
+                    self.model.append(contentsOf: rows.compactMap { roomDict in return HomeModel(jsonData: roomDict) })
                     
                     NSLog(">>>>>>>>>>>>>>>>>>> model : %@", self.model)
                     
                     self.homeViewModelDelegate!.RealodDataFinished(state: ServiceResponse.success)
+                    
+                    self.page += 1
                     
                 }
         

@@ -28,6 +28,8 @@
 		9B9AEA582397F3CF00E20E21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */; };
 		9B9AEA5A2397F40700E20E21 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA592397F40700E20E21 /* HomeViewModel.swift */; };
 		9B9AEA5C2397F45800E20E21 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA5B2397F45800E20E21 /* HomeModel.swift */; };
+		9BBDCC81239FDD56005D842A /* loop_24px.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBDCC80239FDD56005D842A /* loop_24px.svg */; };
+		9BBDCC83239FE0EE005D842A /* HomeViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBDCC82239FE0EE005D842A /* HomeViewFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B9AEA592397F40700E20E21 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9B9AEA5B2397F45800E20E21 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9BBDCC80239FDD56005D842A /* loop_24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop_24px.svg; sourceTree = "<group>"; };
+		9BBDCC82239FE0EE005D842A /* HomeViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFooter.swift; sourceTree = "<group>"; };
 		B2D1845D5BBB51D5083E7B71 /* Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Idus_Test_App-Idus_Test_AppUITests/Pods-Idus_Test_App-Idus_Test_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B881B10BE1E97D4D82F4DB77 /* Pods_Idus_Test_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16AE90D518320A1CE13A5ED /* Pods_Idus_Test_App_Idus_Test_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idus_Test_App_Idus_Test_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				9B3FC804239E189F00A7FF80 /* HomeViewCell.swift */,
+				9BBDCC82239FE0EE005D842A /* HomeViewFooter.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 		9B9AEA472397E23600E20E21 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				9BBDCC80239FDD56005D842A /* loop_24px.svg */,
 				9B450D02239FCE5600F01D9B /* storefront_24px.svg */,
 				9B623CCA239E5B1000C56A55 /* no_image.png */,
 				9B9AEA4E2397F08B00E20E21 /* idus.png */,
@@ -357,6 +363,7 @@
 			files = (
 				9B9AEA1D2397DFBE00E20E21 /* Assets.xcassets in Resources */,
 				9B9AEA1B2397DFBA00E20E21 /* Main.storyboard in Resources */,
+				9BBDCC81239FDD56005D842A /* loop_24px.svg in Resources */,
 				9B623CCB239E5B1000C56A55 /* no_image.png in Resources */,
 				9B9AEA4F2397F08B00E20E21 /* idus.png in Resources */,
 				9B450D03239FCE5600F01D9B /* storefront_24px.svg in Resources */,
@@ -489,6 +496,7 @@
 			files = (
 				9B623CCD239E744C00C56A55 /* DetailViewController.swift in Sources */,
 				9B9AEA142397DFBA00E20E21 /* AppDelegate.swift in Sources */,
+				9BBDCC83239FE0EE005D842A /* HomeViewFooter.swift in Sources */,
 				9B3FC805239E189F00A7FF80 /* HomeViewCell.swift in Sources */,
 				9B9AEA162397DFBA00E20E21 /* SceneDelegate.swift in Sources */,
 				9B9AEA5C2397F45800E20E21 /* HomeModel.swift in Sources */,

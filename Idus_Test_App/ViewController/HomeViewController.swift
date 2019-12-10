@@ -13,7 +13,7 @@ import SVGKit
 class HomeViewController : UIViewController {
     
     var viewModel = HomeViewModel()
-    
+    var alert = UIAlertController(title: nil, message: "", preferredStyle: .alert)
     @IBOutlet var table: UICollectionView!
     
     override func viewDidLoad() {
@@ -24,7 +24,13 @@ class HomeViewController : UIViewController {
         let storefront: SVGKImage = SVGKImage(named: "storefront_24px")
         self.navigationItem.titleView = UIImageView(image: storefront.uiImage)
         viewModel.homeViewModelDelegate = self
-        viewModel.initDataload()
+        viewModel.addDataList()
+        
+        let indicator = UIActivityIndicatorView(frame: self.view.bounds)
+        indicator.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        indicator.isUserInteractionEnabled = false
+        indicator.startAnimating()
+        alert.view.addSubview(indicator)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,7 +57,8 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         let url = URL(string: model.thumbnail_520)
         
         let scale = UIScreen.main.scale
-        let processor = ResizingImageProcessor(referenceSize: CGSize(width: cell.thumbnail_520.bounds.size.width * scale, height: cell.thumbnail_520.bounds.size.height * scale)) |> RoundCornerImageProcessor(cornerRadius: 20)
+        let size = cell.thumbnail_520.bounds.size
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: size.width * scale, height: size.height * scale)) |> RoundCornerImageProcessor(cornerRadius: 20)
         cell.thumbnail_520.kf.indicatorType = .activity
         cell.thumbnail_520.kf.setImage(
         with: url,
@@ -68,6 +75,26 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         cell.seller.text = model.seller
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        if (kind == UICollectionView.elementKindSectionFooter) {
+            
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterReusableView", for: indexPath) as! HomeViewFooter
+            
+            let storefront: SVGKImage = SVGKImage(named: "loop_24px")
+            
+            footerView.icon.image = storefront.uiImage
+            
+            FooterIconAnimation(footerView.icon)
+            
+            return footerView
+            
+        }else{
+            fatalError()
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -89,21 +116,32 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         return 1
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
+            viewModel.addDataList()
+        }
+    }
+    
+    func FooterIconAnimation(_ footerView : UIImageView){
+        let animation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
+        animation.duration = 1
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.repeatCount = .infinity
+        animation.values = [0, Double.pi/2, Double.pi, Double.pi*3/2, Double.pi*2]
+        animation.keyTimes = [NSNumber(value: 0.0), NSNumber(value: 0.1),NSNumber(value: 0.3), NSNumber(value: 0.8), NSNumber(value: 1.0)]
+        footerView.layer.add(animation, forKey: "rotate")
+    }
+    
 }
 
 extension HomeViewController : HomeViewModelDelegate{
     
     func LoadingStart() {
-//        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
-//        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-//        loadingIndicator.hidesWhenStopped = true
-//        loadingIndicator.style = UIActivityIndicatorView.Style.large
-//        loadingIndicator.startAnimating();
-//        alert.view.addSubview(loadingIndicator)
-//        present(alert, animated: true, completion: nil)
+//        present(self.alert, animated: true, completion: nil)
     }
     
     func RealodDataFinished(state: ServiceResponse) {
+//        self.alert.dismiss(animated: true, completion: nil)
         switch state {
             case .success:
             
@@ -113,7 +151,6 @@ extension HomeViewController : HomeViewModelDelegate{
                 break;
         }
         self.table.reloadData()
-//        dismiss(animated: false, completion: nil)
     }
     
 }
