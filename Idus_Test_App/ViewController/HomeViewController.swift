@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import SVGKit
 
 class HomeViewController : UIViewController {
     
@@ -17,13 +18,13 @@ class HomeViewController : UIViewController {
     
     override func viewDidLoad() {
         initView()
-        viewModel.homeViewModelDelegate = self
-        viewModel.initDataload()
     }
     
     func initView() {
-//        let nibName = UINib(nibName: "HomeViewCell", bundle: nil)
-//        table.register(nibName, forCellReuseIdentifier: "Cell")
+        let storefront: SVGKImage = SVGKImage(named: "storefront_24px")
+        self.navigationItem.titleView = UIImageView(image: storefront.uiImage)
+        viewModel.homeViewModelDelegate = self
+        viewModel.initDataload()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

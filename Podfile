@@ -10,6 +10,7 @@ target 'Idus_Test_App' do
   pod 'Kingfisher'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SVGKit'
   
   # Pods for Idus_Test_App
 
