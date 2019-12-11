@@ -58,7 +58,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         let scale = UIScreen.main.scale
         let size = cell.thumbnail_520.bounds.size
-        let processor = ResizingImageProcessor(referenceSize: CGSize(width: size.width * scale, height: size.height * scale)) |> RoundCornerImageProcessor(cornerRadius: 20)
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: size.width * scale, height: size.height * scale), mode: .none) |> RoundCornerImageProcessor(cornerRadius: 20)
         cell.thumbnail_520.kf.indicatorType = .activity
         cell.thumbnail_520.kf.setImage(
         with: url,
@@ -118,7 +118,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
-            viewModel.addDataList()
+            self.viewModel.addDataList()
         }
     }
     

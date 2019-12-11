@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SVGKit
 
-class DetailViewController : UIViewController{
+class DetailViewController : UIViewController {
+    
+    @IBOutlet var cancelBtn: UIButton!
     
     var id : Int = 0
     
-    var viewModel = DetailViewModel()
+//    var viewModel = DetailViewModel()
     
     override func viewDidLoad() {
         
+        let cancel: SVGKImage = SVGKImage(named: "cancel_24px")
+        cancelBtn.setBackgroundImage(cancel.uiImage, for: UIControl.State.normal)
     }
     
 }
