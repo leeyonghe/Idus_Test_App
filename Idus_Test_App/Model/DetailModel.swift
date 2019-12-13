@@ -22,16 +22,27 @@ import Foundation
 struct DetailModel{
     let id : Int
     let thumbnail_720 : String
-    let thumbnaillist320 : String
+    let thumbnaillist320 : [String]
     let title :   String
     let seller :   String
     let cost :   String
     let discount_cost :   String
     let discount_rate :   String
     let description : String
+    init(){
+        self.id = 0
+        self.thumbnail_720 = ""
+        self.thumbnaillist320 = []
+        self.title = ""
+        self.seller = ""
+        self.cost = ""
+        self.discount_cost = ""
+        self.discount_rate = ""
+        self.description = ""
+    }
     init(id : Int,
          thumbnail_720 : String,
-         thumbnaillist320 : String,
+         thumbnaillist320 : [String],
          title : String,
          seller : String,
          cost : String,
@@ -55,7 +66,7 @@ struct DetailModel{
         guard let thumbnail_720 = jsonData["thumbnail_720"] as? String else {
             return nil
         }
-        guard let thumbnaillist320 = jsonData["thumbnaillist320"] as? String else {
+        guard let thumbnaillist320 = jsonData["thumbnail_list_320"] as? String else {
             return nil
         }
         guard let title = jsonData["title"] as? String else {
@@ -77,7 +88,7 @@ struct DetailModel{
             return nil
         }
         self.init(id:id,thumbnail_720 : thumbnail_720,
-                    thumbnaillist320 : thumbnaillist320,
+                    thumbnaillist320 : thumbnaillist320.split(separator: "#").map(String.init),
                     title : title,
                     seller : seller,
                     cost : cost,

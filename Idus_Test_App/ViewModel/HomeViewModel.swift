@@ -18,8 +18,6 @@ protocol HomeViewModelProtocol {
     
     var page : Int { get set }
     
-    var title : String { get }
-    
     var model : [HomeModel] { get set }
     
     func getModelCount() -> Int
@@ -27,6 +25,8 @@ protocol HomeViewModelProtocol {
     func setDelegate(homeViewModelDelegate : HomeViewModelDelegate);
     
     func addDataList()
+    
+    func Network(_ url : String, _ page : Int)
     
 }
 
@@ -50,10 +50,6 @@ public class HomeViewModel : HomeViewModelProtocol {
         return self.model.count
     }
     
-    public var title:String {
-        return "제품 목록"
-    }
-    
     func Network(_ url : String, _ page : Int){
         self.homeViewModelDelegate?.LoadingStart()
         Alamofire.request(url,
@@ -70,7 +66,7 @@ public class HomeViewModel : HomeViewModelProtocol {
 
                     guard let value = response.result.value as? [String: Any],
                         let rows = value["body"] as? [[String: Any]] else {
-                        print("Malformed data received from service")
+                        print("data received from service")
                         self.homeViewModelDelegate!.RealodDataFinished(state: ServiceResponse.failure)
                         return
                     }

@@ -11,6 +11,7 @@ target 'Idus_Test_App' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SVGKit'
+  pod 'RMPZoomTransitionAnimator'
   
   # Pods for Idus_Test_App
 

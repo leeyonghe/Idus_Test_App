@@ -6,6 +6,7 @@ PODS:
   - Kingfisher (5.11.0):
     - Kingfisher/Core (= 5.11.0)
   - Kingfisher/Core (5.11.0)
+  - RMPZoomTransitionAnimator (1.0.3)
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -19,6 +20,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
+  - RMPZoomTransitionAnimator
   - RxCocoa
   - RxSwift
   - SVGKit
@@ -29,6 +31,7 @@ SPEC REPOS:
     - Alamofire
     - CocoaLumberjack
     - Kingfisher
+    - RMPZoomTransitionAnimator
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -39,12 +42,13 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
   Kingfisher: 4569606189149e19c7d9439f47e885d0679b7a90
+  RMPZoomTransitionAnimator: 33ded739d91052810c05c8e553663cc9ec79275b
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: c8be0143f8fb3a4bbd698242c023fda27d111f7d
+PODFILE CHECKSUM: bcba5b73b41e394fcc591b2c7c2732830d76f6d1
 
 COCOAPODS: 1.8.4
