@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RMPZoomTransitionAnimator
 
 extension UIView {
    func roundCorners(corners: UIRectCorner, radius: CGFloat) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ogp-cO-I3x">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,52 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Loading View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="Idus_Test_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jPg-fT-lzQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="O3O-wl-jUw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idus.png" translatesAutoresizingMaskIntoConstraints="NO" id="K63-PU-kqT">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="UFA-jM-4rz"/>
-                                    <constraint firstAttribute="height" constant="200" id="xc8-WQ-bT7"/>
-                                </constraints>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9yO-PO-4VG">
-                                <rect key="frame" x="197" y="778" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Srt-xi-1RE"/>
-                                    <constraint firstAttribute="height" constant="20" id="nJd-ru-hza"/>
-                                </constraints>
-                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="K63-PU-kqT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="98k-n8-oiG"/>
-                            <constraint firstItem="K63-PU-kqT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BDE-yM-kvS"/>
-                            <constraint firstItem="O3O-wl-jUw" firstAttribute="top" secondItem="9yO-PO-4VG" secondAttribute="bottom" constant="64" id="QZ5-Eo-OaI"/>
-                            <constraint firstItem="9yO-PO-4VG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1p-RW-Tbl"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="ogp-cO-I3x" kind="presentation" identifier="next" modalPresentationStyle="overFullScreen" id="FO7-32-nB3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8fB-4q-yCf">
             <objects>
@@ -570,7 +524,4 @@ Silver 92.5 은 / Gold plating
             <point key="canvasLocation" x="2757.971014492754" y="138.61607142857142"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="idus.png" width="300" height="300"/>
-    </resources>
 </document>

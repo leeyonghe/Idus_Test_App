@@ -24,10 +24,10 @@
 		9B9AEA2B2397DFBE00E20E21 /* Idus_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA2A2397DFBE00E20E21 /* Idus_Test_AppTests.swift */; };
 		9B9AEA362397DFBE00E20E21 /* Idus_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA352397DFBE00E20E21 /* Idus_Test_AppUITests.swift */; };
 		9B9AEA4F2397F08B00E20E21 /* idus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AEA4E2397F08B00E20E21 /* idus.png */; };
-		9B9AEA572397F3CF00E20E21 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA552397F3CF00E20E21 /* LoadingViewController.swift */; };
 		9B9AEA582397F3CF00E20E21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */; };
 		9B9AEA5A2397F40700E20E21 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA592397F40700E20E21 /* HomeViewModel.swift */; };
 		9B9AEA5C2397F45800E20E21 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AEA5B2397F45800E20E21 /* HomeModel.swift */; };
+		9BBBFBE423A3CEE200D2DF4C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBBFBE323A3CEE200D2DF4C /* Launch Screen.storyboard */; };
 		9BBDCC81239FDD56005D842A /* loop_24px.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBDCC80239FDD56005D842A /* loop_24px.svg */; };
 		9BBDCC83239FE0EE005D842A /* HomeViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBDCC82239FE0EE005D842A /* HomeViewFooter.swift */; };
 		9BD48E5523A14BE5007336E8 /* cancel_24px.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BD48E5423A14BE5007336E8 /* cancel_24px.svg */; };
@@ -75,10 +75,10 @@
 		9B9AEA352397DFBE00E20E21 /* Idus_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idus_Test_AppUITests.swift; sourceTree = "<group>"; };
 		9B9AEA372397DFBE00E20E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9AEA4E2397F08B00E20E21 /* idus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idus.png; sourceTree = "<group>"; };
-		9B9AEA552397F3CF00E20E21 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B9AEA592397F40700E20E21 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9B9AEA5B2397F45800E20E21 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9BBBFBE323A3CEE200D2DF4C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9BBDCC80239FDD56005D842A /* loop_24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop_24px.svg; sourceTree = "<group>"; };
 		9BBDCC82239FE0EE005D842A /* HomeViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFooter.swift; sourceTree = "<group>"; };
 		9BD48E5423A14BE5007336E8 /* cancel_24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cancel_24px.svg; sourceTree = "<group>"; };
@@ -193,6 +193,7 @@
 				9B9AEA192397DFBA00E20E21 /* Main.storyboard */,
 				9B9AEA1C2397DFBE00E20E21 /* Assets.xcassets */,
 				9B9AEA212397DFBE00E20E21 /* Info.plist */,
+				9BBBFBE323A3CEE200D2DF4C /* Launch Screen.storyboard */,
 			);
 			path = Idus_Test_App;
 			sourceTree = "<group>";
@@ -231,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				9B9AEA562397F3CF00E20E21 /* HomeViewController.swift */,
-				9B9AEA552397F3CF00E20E21 /* LoadingViewController.swift */,
 				9B623CCC239E744C00C56A55 /* DetailViewController.swift */,
 			);
 			path = ViewController;
@@ -366,6 +366,7 @@
 			files = (
 				9B9AEA1D2397DFBE00E20E21 /* Assets.xcassets in Resources */,
 				9B9AEA1B2397DFBA00E20E21 /* Main.storyboard in Resources */,
+				9BBBFBE423A3CEE200D2DF4C /* Launch Screen.storyboard in Resources */,
 				9BBDCC81239FDD56005D842A /* loop_24px.svg in Resources */,
 				9B623CCB239E5B1000C56A55 /* no_image.png in Resources */,
 				9B9AEA4F2397F08B00E20E21 /* idus.png in Resources */,
@@ -504,7 +505,6 @@
 				9B3FC805239E189F00A7FF80 /* HomeViewCell.swift in Sources */,
 				9B9AEA162397DFBA00E20E21 /* SceneDelegate.swift in Sources */,
 				9B9AEA5C2397F45800E20E21 /* HomeModel.swift in Sources */,
-				9B9AEA572397F3CF00E20E21 /* LoadingViewController.swift in Sources */,
 				9B623CCF239E746B00C56A55 /* DetailModel.swift in Sources */,
 				9B3FC802239E09E000A7FF80 /* AppConstants.swift in Sources */,
 				9B9AEA5A2397F40700E20E21 /* HomeViewModel.swift in Sources */,
