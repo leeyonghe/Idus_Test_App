@@ -61,6 +61,7 @@ class DetailViewModel : DetailViewModelProtocol{
                     NSLog(">>>>>>>>>>>>>>>> gap \(gap)")
                     picture.frame = CGRect(x: gap, y: 0, width: width, height: height)
                     picture.contentMode = .scaleToFill
+                    picture.clipsToBounds = true
                     ScrollView.addSubview(picture)
                 }
             }

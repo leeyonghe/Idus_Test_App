@@ -24,6 +24,10 @@ class DetailViewController : UIViewController, DetailViewModelDelegate {
     
     @IBOutlet var HorizonScroll: UIView!
     
+    @IBOutlet var VerticalScroll: UIScrollView!
+    
+    @IBOutlet var verticalContentView: UIView!
+    
     var id : Int = 0
     
     var viewModel : DetailViewModel? = nil
@@ -34,7 +38,11 @@ class DetailViewController : UIViewController, DetailViewModelDelegate {
         
         self.viewModel!.MakeCancelButton(self.cancelBtn, ref: self)
         
-        self.HorizonScroll.roundCorners(corners: [.topLeft, .topRight], radius: 3.0)
+        self.VerticalScroll.contentInset = UIEdgeInsets(top: 13, left: 0, bottom: 0, right: 0)
+        
+        self.verticalContentView.clipsToBounds = true
+        self.verticalContentView.layer.cornerRadius = 30
+        self.verticalContentView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
     }
     

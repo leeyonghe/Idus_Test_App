@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="2000" translatesAutoresizingMaskIntoConstraints="NO" id="zkJ-30-kPE">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="2000" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkJ-30-kPE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1900"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqU-yA-CL6">
@@ -203,7 +203,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k5-pD-BHe">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="375" id="dcH-yt-nod"/>
                                                 </constraints>
@@ -478,7 +478,7 @@ Silver 92.5 은 / Gold plating
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnW-Ok-Dmz">
-                                <rect key="frame" x="334" y="74" width="50" height="50"/>
+                                <rect key="frame" x="334" y="59" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="0f4-Qa-1r6"/>
                                     <constraint firstAttribute="height" constant="50" id="fb7-Ir-bXa"/>
@@ -496,14 +496,16 @@ Silver 92.5 은 / Gold plating
                             <constraint firstItem="zkJ-30-kPE" firstAttribute="leading" secondItem="1kd-Nw-Zfj" secondAttribute="leading" id="iLz-Mj-PCr"/>
                             <constraint firstItem="nZ7-Rc-1A6" firstAttribute="leading" secondItem="1kd-Nw-Zfj" secondAttribute="leading" constant="20" id="mUk-FP-LqY"/>
                             <constraint firstItem="LTz-ho-XWe" firstAttribute="top" secondItem="zkJ-30-kPE" secondAttribute="bottom" constant="-34" id="oqr-eV-GcB"/>
-                            <constraint firstItem="SnW-Ok-Dmz" firstAttribute="top" secondItem="2EC-f9-geS" secondAttribute="bottom" constant="30" id="sL8-z1-9mj"/>
+                            <constraint firstItem="SnW-Ok-Dmz" firstAttribute="top" secondItem="2EC-f9-geS" secondAttribute="bottom" constant="15" id="sL8-z1-9mj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c7V-vx-1ch"/>
                     <size key="freeformSize" width="414" height="1900"/>
                     <connections>
                         <outlet property="HorizonScroll" destination="7k5-pD-BHe" id="HG0-ll-skI"/>
+                        <outlet property="VerticalScroll" destination="zkJ-30-kPE" id="4Wk-bS-89Z"/>
                         <outlet property="cancelBtn" destination="SnW-Ok-Dmz" id="vzR-5b-aAY"/>
+                        <outlet property="verticalContentView" destination="AqU-yA-CL6" id="dXg-jY-5uj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UF-F6-058" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
