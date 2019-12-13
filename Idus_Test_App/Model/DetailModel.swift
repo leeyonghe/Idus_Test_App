@@ -78,12 +78,11 @@ struct DetailModel{
         guard let cost = jsonData["cost"] as? String else {
             return nil
         }
-        guard let discount_cost = jsonData["discount_cost"] as? String else {
-            return nil
-        }
-        guard let discount_rate = jsonData["discount_rate"] as? String else {
-            return nil
-        }
+        
+        let discount_cost = jsonData["discount_cost"] as? String
+        
+        let discount_rate = jsonData["discount_rate"] as? String
+        
         guard let description = jsonData["description"] as? String else {
             return nil
         }
@@ -92,8 +91,8 @@ struct DetailModel{
                     title : title,
                     seller : seller,
                     cost : cost,
-                    discount_cost : discount_cost,
-                    discount_rate : discount_rate,
+                    discount_cost : discount_cost ?? "",
+                    discount_rate : discount_rate ?? "",
                     description : description)
     }
 }

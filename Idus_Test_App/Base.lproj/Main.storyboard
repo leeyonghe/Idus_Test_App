@@ -192,14 +192,14 @@
                         <viewControllerLayoutGuide type="bottom" id="LTz-ho-XWe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1kd-Nw-Zfj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="2000" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkJ-30-kPE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1900"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="3500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqU-yA-CL6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1900"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2900"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k5-pD-BHe">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
@@ -293,7 +293,7 @@ Earring</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Myr-gx-z9z" firstAttribute="top" secondItem="SBh-Ej-37W" secondAttribute="top" id="0Q7-eR-j2c"/>
                                                                     <constraint firstItem="wjb-hc-AA2" firstAttribute="leading" secondItem="aFa-bx-zoi" secondAttribute="trailing" constant="10" id="BMX-xT-CYg"/>
@@ -304,14 +304,35 @@ Earring</string>
                                                                     <constraint firstItem="Myr-gx-z9z" firstAttribute="leading" secondItem="wjb-hc-AA2" secondAttribute="trailing" constant="10" id="v20-Ra-iOE"/>
                                                                 </constraints>
                                                             </view>
+                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISu-fZ-eDB">
+                                                                <rect key="frame" x="26" y="0.0" width="362" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="177,300원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKJ-Uc-Wns">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OKJ-Uc-Wns" secondAttribute="trailing" constant="20" symbolic="YES" id="Xq0-iW-8FC"/>
+                                                                    <constraint firstItem="OKJ-Uc-Wns" firstAttribute="top" secondItem="ISu-fZ-eDB" secondAttribute="top" id="rlQ-cU-PNE"/>
+                                                                    <constraint firstItem="OKJ-Uc-Wns" firstAttribute="leading" secondItem="ISu-fZ-eDB" secondAttribute="leading" id="yAF-YJ-bDg"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="ISu-fZ-eDB" secondAttribute="trailing" constant="26" id="9Ze-di-AyI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ISu-fZ-eDB" secondAttribute="bottom" id="AZ4-qn-rIb"/>
                                                             <constraint firstAttribute="trailing" secondItem="SBh-Ej-37W" secondAttribute="trailing" constant="26" id="M4f-Wm-g22"/>
                                                             <constraint firstItem="SBh-Ej-37W" firstAttribute="top" secondItem="6Sd-Sp-KbH" secondAttribute="top" id="OTR-yf-FPG"/>
                                                             <constraint firstAttribute="height" constant="50" id="ir6-l1-O3C"/>
                                                             <constraint firstAttribute="bottom" secondItem="SBh-Ej-37W" secondAttribute="bottom" id="pH9-Yl-Slq"/>
                                                             <constraint firstItem="SBh-Ej-37W" firstAttribute="leading" secondItem="6Sd-Sp-KbH" secondAttribute="leading" constant="26" id="pva-La-JMn"/>
+                                                            <constraint firstItem="ISu-fZ-eDB" firstAttribute="top" secondItem="6Sd-Sp-KbH" secondAttribute="top" id="qCz-t3-xG2"/>
+                                                            <constraint firstItem="ISu-fZ-eDB" firstAttribute="leading" secondItem="6Sd-Sp-KbH" secondAttribute="leading" constant="26" id="wSg-qq-6bf"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -334,26 +355,26 @@ Earring</string>
                                                 <rect key="frame" x="0.0" y="675" width="414" height="2"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EzE-XE-Rdp">
-                                                        <rect key="frame" x="50" y="0.0" width="314" height="2"/>
+                                                        <rect key="frame" x="20" y="0.0" width="374" height="2"/>
                                                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="EzE-XE-Rdp" firstAttribute="leading" secondItem="yTC-2q-iZs" secondAttribute="leading" constant="50" id="ALM-zP-R0d"/>
+                                                    <constraint firstItem="EzE-XE-Rdp" firstAttribute="leading" secondItem="yTC-2q-iZs" secondAttribute="leading" constant="20" id="ALM-zP-R0d"/>
                                                     <constraint firstAttribute="bottom" secondItem="EzE-XE-Rdp" secondAttribute="bottom" id="CGv-nq-4wm"/>
                                                     <constraint firstItem="EzE-XE-Rdp" firstAttribute="top" secondItem="yTC-2q-iZs" secondAttribute="top" id="LFI-63-7dU"/>
                                                     <constraint firstAttribute="height" constant="2" id="amI-Bc-xgJ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="EzE-XE-Rdp" secondAttribute="trailing" constant="50" id="kK7-c2-sF0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EzE-XE-Rdp" secondAttribute="trailing" constant="20" id="kK7-c2-sF0"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIw-gA-kkL">
-                                                <rect key="frame" x="0.0" y="677" width="414" height="956"/>
+                                                <rect key="frame" x="0.0" y="677" width="414" height="1935"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-7g-Q4c">
-                                                        <rect key="frame" x="26" y="20" width="362" height="916"/>
+                                                        <rect key="frame" x="26" y="20" width="362" height="1895"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-0q-aew">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-0q-aew">
                                                                 <rect key="frame" x="0.0" y="0.0" width="362" height="859.5"/>
                                                                 <string key="text">19 F/W COLLECTION
 
@@ -413,22 +434,22 @@ Silver 92.5 은 / Gold plating
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxV-U5-mgS">
-                                                <rect key="frame" x="30" y="1643" width="359" height="128"/>
+                                                <rect key="frame" x="30" y="2622" width="359" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부랑구마켓은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 부랑구마켓은 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf4-oB-l7T">
-                                                        <rect key="frame" x="10" y="10" width="339" height="108"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="20" y="10" width="319" height="108"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                                <integer key="value" value="1"/>
+                                                                <integer key="value" value="0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                 <integer key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="layer.BorderUIColor">
-                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="value" red="0.63921568630000003" green="0.63921568630000003" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
@@ -437,10 +458,18 @@ Silver 92.5 은 / Gold plating
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Lf4-oB-l7T" secondAttribute="bottom" constant="10" id="6Nb-Jf-98l"/>
                                                     <constraint firstAttribute="height" constant="128" id="9AB-8n-6VJ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Lf4-oB-l7T" secondAttribute="trailing" constant="10" id="Iwf-5o-YoF"/>
-                                                    <constraint firstItem="Lf4-oB-l7T" firstAttribute="leading" secondItem="SxV-U5-mgS" secondAttribute="leading" constant="10" id="JDZ-v7-Qts"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Lf4-oB-l7T" secondAttribute="trailing" constant="20" id="Iwf-5o-YoF"/>
+                                                    <constraint firstItem="Lf4-oB-l7T" firstAttribute="leading" secondItem="SxV-U5-mgS" secondAttribute="leading" constant="20" id="JDZ-v7-Qts"/>
                                                     <constraint firstItem="Lf4-oB-l7T" firstAttribute="top" secondItem="SxV-U5-mgS" secondAttribute="top" constant="10" id="rE1-fi-kjQ"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -448,13 +477,13 @@ Silver 92.5 은 / Gold plating
                                             <constraint firstAttribute="trailing" secondItem="7k5-pD-BHe" secondAttribute="trailing" id="0mW-BZ-Q64"/>
                                             <constraint firstItem="SxV-U5-mgS" firstAttribute="top" secondItem="lIw-gA-kkL" secondAttribute="bottom" constant="10" id="85r-0m-hcj"/>
                                             <constraint firstItem="7k5-pD-BHe" firstAttribute="top" secondItem="AqU-yA-CL6" secondAttribute="top" id="B4E-Ld-IXn"/>
-                                            <constraint firstAttribute="height" constant="1900" id="BaC-X6-kkd"/>
+                                            <constraint firstAttribute="height" constant="2900" id="BaC-X6-kkd"/>
                                             <constraint firstItem="yTC-2q-iZs" firstAttribute="top" secondItem="8eJ-5x-MrO" secondAttribute="bottom" id="CIj-De-res"/>
                                             <constraint firstItem="SxV-U5-mgS" firstAttribute="leading" secondItem="AqU-yA-CL6" secondAttribute="leading" constant="30" id="HS8-Fs-XuK"/>
                                             <constraint firstAttribute="trailing" secondItem="8eJ-5x-MrO" secondAttribute="trailing" id="PwR-U4-hoL"/>
                                             <constraint firstAttribute="trailing" secondItem="yTC-2q-iZs" secondAttribute="trailing" id="UK9-PH-WDX"/>
                                             <constraint firstAttribute="trailing" secondItem="lIw-gA-kkL" secondAttribute="trailing" constant="0.10000000000000001" id="WnX-jx-WJQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="SxV-U5-mgS" secondAttribute="bottom" constant="129" id="arv-2F-wjl"/>
+                                            <constraint firstAttribute="bottom" secondItem="SxV-U5-mgS" secondAttribute="bottom" constant="150" id="arv-2F-wjl"/>
                                             <constraint firstItem="lIw-gA-kkL" firstAttribute="leading" secondItem="AqU-yA-CL6" secondAttribute="leading" constant="0.10000000000000001" id="fmz-UC-fSX"/>
                                             <constraint firstItem="8eJ-5x-MrO" firstAttribute="top" secondItem="7k5-pD-BHe" secondAttribute="bottom" id="hof-aR-QPZ"/>
                                             <constraint firstAttribute="trailing" secondItem="SxV-U5-mgS" secondAttribute="trailing" constant="25" id="lYr-KP-B19"/>
@@ -467,7 +496,7 @@ Silver 92.5 은 / Gold plating
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AqU-yA-CL6" firstAttribute="leading" secondItem="zkJ-30-kPE" secondAttribute="leading" id="AZf-g6-OgH"/>
-                                    <constraint firstAttribute="bottom" secondItem="AqU-yA-CL6" secondAttribute="bottom" id="DBO-BW-h1S"/>
+                                    <constraint firstAttribute="bottom" secondItem="AqU-yA-CL6" secondAttribute="bottom" constant="600" id="DBO-BW-h1S"/>
                                     <constraint firstItem="AqU-yA-CL6" firstAttribute="leading" secondItem="Myl-5J-8pT" secondAttribute="leading" id="HUI-kR-ezB"/>
                                     <constraint firstItem="AqU-yA-CL6" firstAttribute="top" secondItem="Myl-5J-8pT" secondAttribute="top" id="Qg7-qS-OvP"/>
                                     <constraint firstItem="AqU-yA-CL6" firstAttribute="top" secondItem="zkJ-30-kPE" secondAttribute="top" id="hTi-gW-N2u"/>
@@ -478,7 +507,7 @@ Silver 92.5 은 / Gold plating
                                 <viewLayoutGuide key="frameLayoutGuide" id="Myl-5J-8pT"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ7-Rc-1A6">
-                                <rect key="frame" x="20" y="1796" width="374" height="50"/>
+                                <rect key="frame" x="20" y="2796" width="374" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ref-ZW-6YV"/>
@@ -489,13 +518,10 @@ Silver 92.5 은 / Gold plating
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
+                                        <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.BorderUIColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -517,16 +543,25 @@ Silver 92.5 은 / Gold plating
                             <constraint firstItem="AqU-yA-CL6" firstAttribute="width" secondItem="1kd-Nw-Zfj" secondAttribute="width" id="Rww-WR-Awc"/>
                             <constraint firstItem="zkJ-30-kPE" firstAttribute="leading" secondItem="1kd-Nw-Zfj" secondAttribute="leading" id="iLz-Mj-PCr"/>
                             <constraint firstItem="nZ7-Rc-1A6" firstAttribute="leading" secondItem="1kd-Nw-Zfj" secondAttribute="leading" constant="20" id="mUk-FP-LqY"/>
-                            <constraint firstItem="LTz-ho-XWe" firstAttribute="top" secondItem="zkJ-30-kPE" secondAttribute="bottom" constant="-34" id="oqr-eV-GcB"/>
+                            <constraint firstItem="LTz-ho-XWe" firstAttribute="top" secondItem="zkJ-30-kPE" secondAttribute="bottom" constant="-634" id="oqr-eV-GcB"/>
                             <constraint firstItem="SnW-Ok-Dmz" firstAttribute="top" secondItem="2EC-f9-geS" secondAttribute="bottom" constant="15" id="sL8-z1-9mj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c7V-vx-1ch"/>
-                    <size key="freeformSize" width="414" height="1900"/>
+                    <size key="freeformSize" width="414" height="2900"/>
                     <connections>
+                        <outlet property="Cost" destination="Myr-gx-z9z" id="ush-nv-USe"/>
+                        <outlet property="Cost2" destination="OKJ-Uc-Wns" id="bdg-iv-qQP"/>
+                        <outlet property="Description" destination="AF8-0q-aew" id="hfq-IH-jlb"/>
+                        <outlet property="Discount_cost" destination="wjb-hc-AA2" id="uId-sT-kDu"/>
                         <outlet property="HorizonScroll" destination="7k5-pD-BHe" id="HG0-ll-skI"/>
+                        <outlet property="Seller" destination="gOg-rM-93u" id="M9R-wX-7i1"/>
+                        <outlet property="Titles" destination="68d-cd-Quo" id="dft-h5-4Ml"/>
                         <outlet property="VerticalScroll" destination="zkJ-30-kPE" id="4Wk-bS-89Z"/>
                         <outlet property="cancelBtn" destination="SnW-Ok-Dmz" id="vzR-5b-aAY"/>
+                        <outlet property="discount_rate" destination="aFa-bx-zoi" id="8bX-Gc-gxy"/>
+                        <outlet property="price_layout" destination="SBh-Ej-37W" id="2DW-GB-GbU"/>
+                        <outlet property="price_layout2" destination="ISu-fZ-eDB" id="b28-FT-iqZ"/>
                         <outlet property="verticalContentView" destination="AqU-yA-CL6" id="dXg-jY-5uj"/>
                     </connections>
                 </viewController>

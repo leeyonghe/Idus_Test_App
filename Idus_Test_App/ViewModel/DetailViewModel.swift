@@ -25,6 +25,8 @@ protocol DetailViewModelProtocol {
     
     func MakeImageScroll(_ contentView : UIView, _ images : [String], ref : DetailViewController)
     
+    func MakeAll(price_layout : UIView, price_layout2 : UIView, description : UILabel, discount_rate : UILabel, discount_cost : UILabel, cost : UILabel, seller : UILabel, title : UILabel, cost2 : UILabel)
+    
 }
 
 class DetailViewModel : DetailViewModelProtocol{
@@ -97,6 +99,26 @@ class DetailViewModel : DetailViewModelProtocol{
                     
                 }
         
+    }
+    
+    func MakeAll(price_layout : UIView, price_layout2 : UIView, description : UILabel, discount_rate : UILabel, discount_cost : UILabel, cost : UILabel, seller : UILabel, title : UILabel, cost2 : UILabel){
+        
+        description.text = self.model?.description
+        
+        if self.model?.discount_rate == "" && self.model?.discount_cost == "" {
+            price_layout.isHidden = true
+            price_layout2.isHidden = false
+            cost2.text = self.model?.cost
+        }else{
+            price_layout.isHidden = false
+            price_layout2.isHidden = true
+            discount_rate.text = self.model?.discount_rate
+            discount_cost.text = self.model?.discount_cost
+            cost.text = self.model?.cost
+        }
+        
+        seller.text = self.model?.seller
+        title.text = self.model?.title
     }
     
 }
