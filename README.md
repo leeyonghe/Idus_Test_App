@@ -50,25 +50,6 @@
 </code></pre></div>
 <hr>
 
-<h2>디자인 요구 사항</h2>
-
-<ul>
-<li>상세 동작은 <a href="https://bit.ly/2QG7gTG" target="_blank" rel="noopener">여기의 프로토 타입에서</a> 확인하실 수 있습니다.
-
-<ul>
-<li>[상품 목록]에서 [상품 상세]로의 전환시 애니메이션이 적용되어야 하며, 제공한 프로토타입의 2행2열 상품(Triple Hearthorn Earring)을 클릭하면 확인할 수 있습니다.</li>
-</ul></li>
-<li>디자인 가이드는 제플린으로 제공되며 <a href="https://zpl.io/V1poGjE" target="_blank" rel="noopener">여기를</a> 참고하세요.
-
-<ul>
-<li>ID: prgms_public</li>
-<li>PW: programmers</li>
-</ul></li>
-<li>필요한 아이콘은 <a href="https://bit.ly/2QG6hTB" target="_blank" rel="noopener">여기에서</a> 다운로드 받으실 수 있습니다.</li>
-</ul>
-
-<hr>
-
 <h2>API</h2>
 
 <h3>BASE URL</h3>
